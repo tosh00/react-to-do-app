@@ -1,0 +1,44 @@
+.list-element{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.list-element + .list-element{
+  border-top: 1px solid #888;
+}
+
+
+.list-element.done{
+  opacity: .5;
+  text-decoration: line-through;
+}
+
+.list-element.past {
+  color: rgb(213 62 62);
+}
+
+.list-element > div{
+  flex: 5;
+  text-align: center;
+  padding: 1rem;
+  /* border-right: 1px solid #333; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list-element > .complete-button{
+  flex: 1;
+}
+
+.list-element .description{
+  opacity: .7;
+  font-size: .8rem;
+}
+
+
+.dlete-icon{
+  color: #000;
+  cursor: pointer;
+}
